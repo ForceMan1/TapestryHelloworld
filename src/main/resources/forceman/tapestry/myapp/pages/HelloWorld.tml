@@ -1,0 +1,16 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+<body>
+        Pretech: Hello world
+        <t:form t:id="userInputForm"><t:errors/>
+            <table>
+                <tr><td>
+                    Enter your Name:
+                </td><td>
+                    <t:textfield t:value="Name" t:validate="required,minlength=3"/>
+                </td></tr><tr><td>
+                    <input type="submit" value="Submit"/>
+                 </td></tr>
+            </table>
+        </t:form>
+</body>
+</html>
