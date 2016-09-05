@@ -1,0 +1,20 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+<body>
+    <h1>Activation Context (2)</h1>
+
+    Look at the URL of this page. It is the render request from the PageLink. The parameter at the end is its <strong>activation context</strong>.<br/>
+    The target page can receive the activation context with an <strong>onActivate</strong> method. For example:<br/>
+
+    <code><pre>
+        void onActivate(Long personId) {
+            this.personId = personId;
+        }</pre></code>
+
+    This page has been activated with context <em></em>. Here is that Person:<br/>
+
+    <div class="eg">
+        <t:beandisplay object="person">[BeanDisplay here]</t:beandisplay>
+    </div>
+
+</body>
+</html>
