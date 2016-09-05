@@ -1,0 +1,15 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+<body>
+    <h1>Activation Request Parameters (1)</h1>
+
+    A render request can include query parameters in key=value fashion. To make a PageLink include query parameters, use its <code>parameters</code> parameter.
+
+    <div class="eg">
+        <t:pagelink t:page="ActivationRequestParameters2" t:parameters="queryParams">Show Person ${personId}</t:pagelink><br/>
+    </div>
+
+    That link will have a URL like this: <code>http://localhost:8080/activationrequestparameters2?personid=1</code><br/><br/>
+
+    Click the link above to learn more.<br/><br/>
+</body>
+</html>

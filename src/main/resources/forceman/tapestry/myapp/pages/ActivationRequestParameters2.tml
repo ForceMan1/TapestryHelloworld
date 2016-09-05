@@ -1,0 +1,18 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+<body>
+    <h1>Activation Request Parameters (2)</h1>
+
+    Look at the URL of this page. The query parameter at the end is called an <strong>activation request parameter</strong>.<br/>
+    To receive activation request parameters, use the <strong>@ActivationRequestParameter</strong> field annotation. For example:<br/>
+
+    <code>
+        @ActivationRequestParameter(value = "personid")
+        private Long personId;</code>
+
+    This page has been activated with activation request parameter <em>personid=${personId}</em>. Here is that Person:<br/>
+
+    <div class="eg">
+        <t:beandisplay object="person">[BeanDisplay here]</t:beandisplay>
+    </div>
+</body>
+</html>
