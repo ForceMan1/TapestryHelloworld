@@ -13,8 +13,10 @@
 
     http://jumpstart.doublenegative.com.au/jumpstart/examples/navigation/activationrequestparameters2?personid=1
 
+    <!--
     <div class="eg">
         <t:beandisplay object="person">[BeanDisplay here]</t:beandisplay>
     </div>
+    -->
 </body>
 </html>
